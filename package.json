@@ -1,0 +1,19 @@
+{
+  "name": "guideroster-server",
+  "version": "1.0.0",
+  "description": "纪念馆讲解员排班调度服务端系统",
+  "main": "app.js",
+  "scripts": {
+    "start": "node app.js",
+    "dev": "node app.js",
+    "seed": "node seed/seedData.js",
+    "reset": "rm -f db.json && node seed/seedData.js"
+  },
+  "dependencies": {
+    "express": "^4.18.2",
+    "cors": "^2.8.5",
+    "body-parser": "^1.20.2",
+    "lowdb": "^1.0.0",
+    "shortid": "^2.2.16"
+  }
+}
